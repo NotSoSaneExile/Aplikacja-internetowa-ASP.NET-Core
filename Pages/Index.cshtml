@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "PS02-PiotrK";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.Name</h1>
+</div>
+
+<form>
+    <div class="form-row">
+        <div class="col text-center">
+            <label for="FavCity">Your favourite City</label>
+            <input type="text" class="form-control" id="FavCity" required>
+        </div>
+        <div class="col text-center">
+            <label for="FavNumber">Number</label>
+            <input type="text" class="form-control" id="FavNumber" required>
+        </div>
+        <div class="col text-center">
+            <label for="FavZipCode">ZipCode</label>
+            <input type="text" class="form-control" id="FavZipCode" required>
+        </div>
+        <div class="col text-center">
+            <label for="FavStreet">Street</label>
+            <input type="text" class="form-control" id="FavStreet" required>
+        </div>
+    </div>
+    <div class="col text-center">
+        <br /><br /><br /><button type="submit" class="btn btn-primary">Zatwierdź</button>
+    </div>
+</form>
+
